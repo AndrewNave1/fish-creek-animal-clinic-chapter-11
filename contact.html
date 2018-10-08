@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<head>
+		 <title>Fish Creek Animal Clinic Contact</title>
+		 <meta charset="utf-8">
+		 <link rel="stylesheet" href="fishcreek.css">
+		 <script> 
+		 function validateForm() {
+		 if (document.forms[0].myEmail.value == "" ) {
+			alert("Please enter an e-mail address.");
+			return false;
+		} // end if
+		return true;
+		} // end function validateForm
+		</script>
+	</head>
+
+
+	<body>
+		<div id="wrapper">
+			<header>
+				<h1 id="header"> <img src="fishcreeklogo.gif" alt="Fish Creek Animal Hospital" width="600" height="77"></h1>
+			</header>
+
+			<div class="nav" id="leftcolumn">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="services.html">Services</a></li>
+					<li><a href="askvet.html">Ask the Vet</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</div>
+
+			<main>
+				<h2>Contact Fish Creek</h2>
+				<p>Required information is marked with an asterisk (*).</p>
+				<form method="post" action=
+				"http://webdevbasics.net/scripts/fishcreek.php"
+				onsubmit="return validateForm();">
+					<div class="myRow">
+						<label class="label" for="myName">*Name:</label>
+						<input type="text" name="myName" id="myName" />
+					</div>
+					<div class="myRow">
+						<label class="label" for="myEmail">*E-mail:</label>
+						<input type="email" name="myEmail" id="myEmail"  />
+					</div>
+					<div class="myRow">
+						<label class="label" for="myComments">*Comments:</label>
+						<textarea name="myComments" id="myComments" rows="2" cols="20"></textarea>
+					</div>
+					<div class="mySubmit">
+						<input type="submit" value="Submit"/>
+					</div>
+				</form>
+			</main>
+
+			<footer>
+				<p>Copyright &copy; Fish Creek Animal Hospital</p>
+				<p><a href="S1336153@mcckc.student.edu">Andrew Nave</a></p>
+			</footer>
+		</div>
+	</body>
+</html>
